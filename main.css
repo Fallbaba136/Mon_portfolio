@@ -1,250 +1,205 @@
+/* ===============================
+   RESET LÉGER (Bootstrap friendly)
+================================ */
 
-.modif{
-  color: red;
-}
-table, th, td{
-  border:3px solid rgb(14, 181, 61);
+/* BACKGROUND UNIQUEMENT HOME */
+body.home{
+  background: url(gif_AI.gif) center / cover no-repeat;
+  color:beige;
 }
 
- p{
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  margin: 0;
+  min-height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: blueviolet;
+  background-color: beige;
+}
+
+/* ===============================
+   ANIMATION
+================================ */
+@keyframes fadeIn{
+  from{ opacity: 0; }
+  to{ opacity: 0.5; }
+}
+
+/* ===============================
+   TITRES
+================================ */
+h1{
+  margin: 20px 0;
+  text-align: center;
+  font-family: Poppins, Arial, sans-serif;
+  animation: fadeIn 2s ease-in;
+}
+
+h2{
+  text-align: center;
+  margin: 15px 0;
+}
+
+/* ===============================
+   PARAGRAPHES
+================================ */
+p{
   margin: 10px;
-    border-left: 4px solid rgb(15, 14, 14);
-    padding:0%;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(211, 10, 10, 0.1);
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    transition: all 0.3s ease;
-   }
-   p:hover{
-    background-color:rgb(8, 8, 8);
-    border-left-color: rgb(67, 65, 90);
-    transform: translateX(5px);
-   }
-    @keyframes fadeIn{
-      from {opacity: 0;}
-      to { opacity: 0.5;}
-    }
-    h1{
-      color: aliceblue;
-      margin: 20px 0;
-      text-align: center;
-      animation: fadeIn 2s ease-in;
-    }
-    .dowland{
-          color: white; /* Couleur du texte */
-          padding: 10px 20px; /* Espacement autour du texte */
-          text-align: center;
-          text-decoration: none; /* Retire la décoration par défaut du lien */
-          font-size: 16px;
-          border-radius: 5px; /* Coins arrondis */
-          display: inline-block; /* Permet de gérer la mise en forme comme un bouton */
-      }
-    h1{
-      font-family: 'poppins', sans-serif;
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-    h4{
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-    }
-    .classorom{
-      margin-top: 5%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .social-links a {
-      align-content:baseline;
-      justify-content:right;
-      gap: 15px;
-  display:contents;
+  padding: 10px;
+  border-left: 4px solid #111;
+  border-radius: 5px;
+  line-height: 1.6;
+  transition: 0.3s;
 }
 
-.social-links img {
-  width: 30px; /* Ajustez la taille des icônes */
+p:hover{
+  background-color: #080808;
+  border-left-color: #43415a;
+  transform: translateX(5px);
+}
+
+/* ===============================
+   NAVBAR (sans casser Bootstrap)
+================================ */
+.navbar{
+  background-color: rgb(5, 97, 5);
+  padding: 10px 0;
+}
+
+.navbar ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.navbar li{
+  float: none;
+}
+
+.navbar li a{
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: beige;
+  font-weight: bold;
+}
+
+.navbar li a:hover{
+  background-color: blue;
+}
+
+.active{
+  background-color: black;
+}
+
+/* ===============================
+   TABLEAUX
+================================ */
+table, th, td{
+  border: 3px solid rgb(14, 181, 61);
+  border-collapse: collapse;
+}
+
+th{
+  background-color: rgb(13, 182, 33);
+  padding: 10px;
+}
+
+td{
+  padding: 10px;
+}
+
+/* ===============================
+   BOUTONS / DOWNLOAD
+================================ */
+.dowland{
+  padding: 20px;
+  text-align: center;
+}
+
+.btn{
+  font-weight: bold;
+}
+
+/* ===============================
+   RÉSEAUX SOCIAUX
+================================ */
+.social-links{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-links img{
+  width: 30px;
   height: 30px;
-  clip-path: circle(50% at 50% 50%);
+  border-radius: 50%;
   transition: transform 0.3s;
 }
 
-.social-links img:hover {
-  transform: scale(1.2); /* Effet d'agrandissement au survol */
-}
-    .mode{
-      color: blue;
-     text-align: left;
-  }
-    .navbar{
-      display:list-item;
-      justify-content: space-around;
-      align-items: center;
-      background-color: rgb(5, 97, 5);
-      padding: 10px 0;
-    }
-    .navbar a {
-      text-decoration: none;
-      font-weight: bolder;
-      color: rgb(24, 25, 24);
-      font-size: 18px;
-    }
-    h1{
-      text-align: left;
-    }
-html, body{
-  background-image: url(background.GIF);
-overflow-y: auto;
-position: relative;
-overflow: auto;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  font-family: Arial, Helvetica, sans-serif;
-  min-height: 100%;
-  text-align: center;
-  margin: 0;
-}
-li {
-  line-height: 1.5;
-  text-align: center;
+.social-links img:hover{
+  transform: scale(1.2);
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+/* ===============================
+   CLASSES UTILITAIRES
+================================ */
+.modif{ color: red; }
+.info{ color: red; }
+
+/* ===============================
+   PAGES SPÉCIFIQUES
+================================ */
+
+/* HOME */
+body.home{
+  background: url(gif_AI.gif) center / cover no-repeat;
 }
 
-li {
-  float: right;
+/* BIOGRAPHIE */
+body.bio{
+  background: url(image01.png) center / cover no-repeat;
 }
 
-li a {
-  display:block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+/* CONTACT */
+body.contact{
+  background-color: rgb(44, 172, 27);
 }
 
-li a:hover {
-  background-color:blue;
-}
-.info{
-    color: red;
-}
-body{
-  font-family: Arial, Helvetica, sans-serif;
-height: 100vh;
-background-color:rgb(4, 86, 4);
-text-align: center;
-margin: 0;
-color: white;
-}
-th{
-    background-color: rgb(3, 159, 29);
-}
-li {
-display:list-item;
+/* COMPÉTENCES */
+body.skills{
+  background: url(images02.png) center / cover no-repeat;
 }
 
-ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
+/* SERVICES */
+body.services{
+  background-color: #0b3d0b;
 }
 
-li {
-float:left;
-text-align: center;
+/* CV */
+body.cv{
+  background-color: #1a1a1a;
 }
 
-li a {
-display:block;
-color: white;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-}
-li a:hover {
-background-color:blue;
-}
-li:last-child {
-border-right: none;
-}
-.active {
-background-color: #04AA6D;
-}  
+/* ===============================
+   IMAGES
+================================ */
 img{
-text-align: center;
-}
-map{
-width: 100%;
-height: 400%;
-}
-a{
-text-align: left;
+  max-width: 100%;
+  height: auto;
 }
 
-th{
-border-spacing: 10px;
+/* ===============================
+   MAP
+================================ */
+#map iframe{
+  max-width: 100%;
+  border-radius: 5px;
 }
-h1{
-text-align: center;
-}
-p{
-text-align: center;
-font-size: 20px;
-font-family:Arial, Helvetica, sans-serif;
-}
-th{
-background-color:rgb(13, 182, 33);
-}
- h2{
-        text-align: center;
-      }
- 
-  ul {
-    list-style-type:none;
-    margin:0;
-    padding: 0;
-    overflow:hidden;
-  }
-  
-  
-  li a {
-    display:block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color:blue;
-  }
-  
-  
-  li:last-child {
-    border-right: none;
-  }
-        body{
-    background-color: bisque;
-}
-    body, p{
-    background-color:rgb(44, 172, 27);
-    font-size: 20px;
-    text-align: center;
-    font-family: cursive;
-    text-align: left;
-}
-p{
-    text-align: left;
-    margin: 5px;
-    padding: 10px;
-}
-
