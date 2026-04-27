@@ -1,71 +1,107 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="stylesheet" href="main.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service proposés</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Babacar FALL</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<div class="navbar">
-    <h2>Service.</h2>
-    <ul>
-        <li><a href="Contact.html">Contact</a></li>
-        <li><a href="Service_proposées.html">Services</a></li>
-        <li><a href="Mes_compétence.html">Acquis</a></li>
-        <li><a href="Mon_Cv.html">CV</a></li>
-        <li><a href="Biographie.html">About</a></li>
-        <li><a href="Portefolio.html">Home</a></li>
-    </ul>
-</div>
-    <h1>A propos</h1>
-    <p>Bienvenue sur la page dédiée à mes services ! Avec une expertise approfondie dans 
-        développement web, développement Python, Création de sites 
-        je propose des solutions personnalisées et créatives adaptées aux besoins uniques de chaque client. 
-        Mon objectif est de vous aider à concrétiser vos projets grâce à des prestations sur mesure qui répondent à vos attentes. 
-        Découvrez ci-dessous les services que je propose pour vous accompagner dans la réussite de vos projets.</p><br>
-        <h2>Dévellopement Web personnalisées</h2>
-    <p>Création de sites web professionnels : Que vous ayez besoin d'un site vitrine, d'un e-commerce ou d'une plateforme sur mesure, 
-            je m'engage à concevoir des sites modernes, intuitifs et optimisés pour les moteurs de recherche. 
-            Mon approche repose sur une écoute attentive de vos besoins pour proposer une solution qui vous ressemble et qui répond aux attentes de vos utilisateurs.</p><br>
-            <h2>Développement Python simples et pratiques</h2>
-    <p>Je propose des services de développement en Python pour des projets simples et pratiques. 
-        Que vous ayez besoin d'un petit script, d'une application de base ou d'aide pour résoudre un problème spécifique, 
-        je suis là pour vous aider à trouver des solutions efficaces</p><br>
-        <h1>Crétaion de site web simple et fonctionnels</h1>
-    <p>Je propose la création de sites web simples et fonctionnels, adaptés à vos besoins. 
-        Que ce soit pour un projet personnel, un site vitrine ou une première expérience en ligne, 
-        je vous aide à construire une présence sur le web avec un site clair et facile à utiliser.</p><br>
-        
-<div class="centre">
+<nav class="navbar">
+  <div class="logo">BF<span>.</span></div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Biographie.html">À propos</a></li>
+    <li><a href="Mes_compétence.html">Compétences</a></li>
+    <li><a href="projets.html">Projets</a></li>
+    <li><a href="Mon_Cv.html">CV</a></li>
+    <li><a href="Service_proposées.html">Services</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-content">
+  <div class="page-hero">
+    <div class="section-tag">Ce que je propose</div>
+    <h1>Services</h1>
+    <p>Solutions personnalisées en développement web et programmation Python, adaptées à vos besoins.</p>
+  </div>
+
+  <div class="grid-3" style="margin-bottom:48px;">
+    <div class="project-card">
+      <div class="project-icon blue">🌐</div>
+      <h3>Développement Web</h3>
+      <p>Création de sites web modernes, responsifs et optimisés — vitrine, portfolio ou plateforme sur mesure.</p>
+      <div class="project-tags">
+        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span><span class="tag">PHP</span>
+      </div>
+      <div style="margin-top:12px; font-size:0.82rem; color:var(--accent); font-weight:700;">À partir de 500 €</div>
+      <div style="font-size:0.8rem; color:var(--text-muted);">Délai : 1 à 2 semaines</div>
+    </div>
+    <div class="project-card">
+      <div class="project-icon green">🐍</div>
+      <h3>Scripts Python</h3>
+      <p>Automatisation de tâches, traitement de données, petits programmes utilitaires adaptés à vos besoins.</p>
+      <div class="project-tags">
+        <span class="tag">Python</span><span class="tag">Automatisation</span><span class="tag">Data</span>
+      </div>
+      <div style="margin-top:12px; font-size:0.82rem; color:var(--accent); font-weight:700;">À partir de 600 €</div>
+      <div style="font-size:0.8rem; color:var(--text-muted);">Délai : selon complexité</div>
+    </div>
+    <div class="project-card">
+      <div class="project-icon yellow">🏗️</div>
+      <h3>Création de Site Complet</h3>
+      <p>Site web complet avec frontend et backend intégrés, base de données, formulaires et déploiement.</p>
+      <div class="project-tags">
+        <span class="tag">Full Stack</span><span class="tag">MySQL</span><span class="tag">PHP</span>
+      </div>
+      <div style="margin-top:12px; font-size:0.82rem; color:var(--accent); font-weight:700;">À partir de 1 500 €</div>
+      <div style="font-size:0.8rem; color:var(--text-muted);">Délai : 3 à 4 semaines</div>
+    </div>
+  </div>
+
+  <div class="table-wrap" style="margin-bottom:48px;">
     <table>
-          <caption>Les services que je propose</caption>
+      <thead>
         <tr>
-            <th><b>Service</b></th>
-            <th>Temps estimé</th>
-            <th>Technologies</th>
-            <th>Tarif</th>
+          <th>Service</th>
+          <th>Technologies</th>
+          <th>Durée estimée</th>
+          <th>Tarif</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Développement Web</td>
+          <td>HTML, CSS, JavaScript, PHP</td>
+          <td>1 à 2 semaines</td>
+          <td><span class="level">À partir de 500 €</span></td>
         </tr>
         <tr>
-            <td><b><span class="modif">Developpement Web</span></b></td>
-            <td>1 à 2 semaines</td>
-            <td>HTML, CSS, XML</td>
-            <td>A partir de 500£</td>
+          <td>Script Python</td>
+          <td>Python, bibliothèques spécifiques</td>
+          <td>Selon complexité</td>
+          <td><span class="level">À partir de 600 €</span></td>
         </tr>
         <tr>
-            <td><b><span class="modif">Développement Python</span></b></td>
-            <td>.............</td>
-            <td>Python, Bibliothéque Python</td>
-            <td>A partir de 600£</td>
+          <td>Site Complet</td>
+          <td>HTML, CSS, JS, PHP, MySQL</td>
+          <td>3 à 4 semaines</td>
+          <td><span class="level">À partir de 1 500 €</span></td>
         </tr>
-        <tr>
-            <td><b><span class="modif">Création de Site</span></b></td>
-            <td>3 à 4 semaines</td>
-            <td>HTML, CSS, XML</td>
-            <td>A partir de 1500£</td>
-        </tr>
+      </tbody>
     </table>
-    
-</div> 
+  </div>
+
+  <div class="card" style="text-align:center; padding:40px;">
+    <h2 style="margin-bottom:12px;">Discutons de votre projet</h2>
+    <p style="margin-bottom:24px; max-width:480px; margin-left:auto; margin-right:auto;">
+      Chaque projet est unique. Contactez-moi pour obtenir un devis personnalisé adapté à vos besoins.
+    </p>
+    <a href="Contact.html" class="btn-primary">✉️ Me contacter</a>
+  </div>
+
+  <div class="footer">Fait avec ❤️ par <span>Babacar FALL</span> — L2 Informatique ULCO 2025–2026</div>
+</div>
 </body>
 </html>

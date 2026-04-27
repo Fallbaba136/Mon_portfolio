@@ -1,43 +1,101 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="stylesheet" href="main.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Babacar FALL</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<div class="navbar">
-  <h1>Contact.</h1>
+<nav class="navbar">
+  <div class="logo">BF<span>.</span></div>
   <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="Biographie.html">About</a></li>
-    <li><a href="Mes_compétence.html">Acquis</a></li>
+    <li><a href="Biographie.html">À propos</a></li>
+    <li><a href="Mes_compétence.html">Compétences</a></li>
+    <li><a href="projets.html">Projets</a></li>
     <li><a href="Mon_Cv.html">CV</a></li>
     <li><a href="Service_proposées.html">Services</a></li>
+    <li><a href="Contact.html">Contact</a></li>
   </ul>
-</div>
-<h1>A propos</h1>
-  <p>
-    En tant qu'étudiant motivé et curieux, je recherche des stages, collaborateurs ou des projets qui me permettront
-    d'appliquer mes connaissances en programmation et de continuer à apprendre. Je m'interesse notamment
-    aux langages comme Python,C++, Java, SQL, HTML/CSS, et aux bases du développement web. 
-  </p>
-  <div class="dowland">
-    <h1>Mes coordonnées</h1>
-      
-        <h2><b>Prenom:</b></h2><p>Babacar</p><br>
-        <h2><b>Nom:</b></h2> <p>FALL</p><br>
-        <h2><b>Proffession:</b></h2><p>Etudiant</p><br>
-        <h2><b>Université:</b></h2><p>Université du Littoral Côte d'Opale</p><br>
-        <h2><b>Lien vers mon Université:</b></h2><p><a href="https://www.univ-littoral.fr/">ULCO</a></p><br>
-        <h2><b>Email:</b></h2><p>Fallbaba136@gmail.com</p><br>
-        <h2><b>Numéro de téléphone:</b></h2><p>0753529247</p><br>
-        <h2><b>Localisation</b></h2>
-      
+</nav>
+
+<div class="page-content">
+  <div class="page-hero">
+    <div class="section-tag">Me contacter</div>
+    <h1>Contact</h1>
+    <p>Étudiant motivé, je recherche des stages, collaborations ou projets pour appliquer mes compétences.</p>
   </div>
-    <div id="map">
-        <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=1.874949932098389%2C50.95188459301361%2C1.8831682205200198%2C50.95587215809415&amp;layer=mapnik" style="border: 1px solid black"></iframe><br><small><a href="https://www.openstreetmap.org/#map=17/50.953878/1.879059">Afficher une carte plus grande</a></small>
+
+  <div class="contact-grid" style="margin-bottom:40px;">
+    <div class="contact-item">
+      <div class="contact-icon">📧</div>
+      <div>
+        <div class="contact-label">Email</div>
+        <div class="contact-val"><a href="mailto:Fallbaba136@gmail.com" style="color:var(--accent);">Fallbaba136@gmail.com</a></div>
+      </div>
     </div>
+    <div class="contact-item">
+      <div class="contact-icon">📱</div>
+      <div>
+        <div class="contact-label">Téléphone</div>
+        <div class="contact-val"><a href="tel:+33753529247" style="color:var(--text);">07 53 52 92 47</a></div>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">🎓</div>
+      <div>
+        <div class="contact-label">Université</div>
+        <div class="contact-val"><a href="https://www.univ-littoral.fr/" target="_blank" style="color:var(--accent);">ULCO — Calais</a></div>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">📍</div>
+      <div>
+        <div class="contact-label">Localisation</div>
+        <div class="contact-val">73 route de Gravelines, 62100 Calais</div>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">🐙</div>
+      <div>
+        <div class="contact-label">GitHub</div>
+        <div class="contact-val"><a href="https://github.com/Fallbaba136" target="_blank" style="color:var(--accent);">github.com/Fallbaba136</a></div>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">👤</div>
+      <div>
+        <div class="contact-label">Profession</div>
+        <div class="contact-val">Étudiant L2 Informatique</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header">
+    <div class="section-tag">Réseaux sociaux</div>
+    <h2 class="section-title" style="font-size:1.3rem;">Me retrouver en ligne</h2>
+  </div>
+  <div class="social-links" style="margin-bottom:40px;">
+    <a href="https://www.instagram.com/_fvll_baba/" class="social-btn" target="_blank">
+      <img src="icone-instagram_1003347-456.avif" alt="Instagram">
+    </a>
+    <a href="https://twitter.com/Babacar_Fall" class="social-btn" target="_blank">
+      <img src="twitter-logo-3d-model-obj-c4d.jpg" alt="Twitter">
+    </a>
+    <a href="https://discord.com/users/Fall_Baba" class="social-btn" target="_blank">
+      <img src="discord.jpg" alt="Discord">
+    </a>
+  </div>
+
+  <div id="map">
+    <iframe width="100%" height="320" src="https://www.openstreetmap.org/export/embed.html?bbox=1.874949932098389%2C50.95188459301361%2C1.8831682205200198%2C50.95587215809415&layer=mapnik" style="border:none;"></iframe>
+    <small style="display:block; margin-top:8px; color:var(--text-muted); font-size:0.78rem;">
+      <a href="https://www.openstreetmap.org/#map=17/50.953878/1.879059" style="color:var(--text-muted);">Afficher une carte plus grande</a>
+    </small>
+  </div>
+
+  <div class="footer">Fait avec ❤️ par <span>Babacar FALL</span> — L2 Informatique ULCO 2025–2026</div>
+</div>
 </body>
 </html>
